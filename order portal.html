@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Order Portal</title>
+        <link rel="stylesheet" type="text/css" href="orderportal.css">
+        <script type="text/javascript" src="orderportal.js"></script>
+        </head>
+        <body>
+        <h1>
+            <img src="https://www.haldirams.com/media/logo1.png" href="https://www.haldirams.com/" width="200px" height=" 100px">
+        </h1>
+        <ul>
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#about">About</a></li>
+          </ul><br>
+        <h3>Over the course of eight decades, a lot has changed about us. We have relocated, undergone expansion, developed new product lines & added segments, opened retail chains & stores across India and embraced new markets overseas. One thing hasn't changed - were still a tight-knit family business, committed to serving the most authentic taste of India through our products.<br>Although, Haldiram's is about more than just food. By creating a strong sense of community and supporting our associates, we continue to feel like a true family business. We carry these values with us as we operate together to serve generations of happy connoisseurs across the globe and continue to be the nation's beloved snack-food company.
+
+           <br> As the age old saying goes, The way to one's heart courses through their stomach. We want to leave no stone unturned to win your hearts.</h3><hr>
+        <p id="bghead"><b>Please enter your details :</b></p>
+        <div>
+            <form method="post" autocomplete="on" name="Personaldetail">
+                <fieldset>
+                    <legend >Personal details:</legend>
+    <label for="fname">First Name:</label><br>
+    <input type="text" id="fname" name="fname" onblur="validatefirstname()" autofocus required>
+    <span id="firstname"></span>
+    <br>
+    <label for="lname">Last Name:</label><br>
+    <input type="text" id="lname" onblur="validatelastname()" name="lname" required>
+    <span id="lastname"></span>
+    <br>
+    <label for="gender" >Select your gender:</label><br>
+    <input type="radio" id="gender" name="gender" value="Male" checked>
+    <label for="gender">Male</label><br>
+    <input type="radio" id="gender" name="gender" value="female">
+    <label for="gender">Female</label><br>
+    <input type="radio" id="gender" name="gender" value="Transgender">
+    <label for="gender">Transgender</label><br>
+    <label for="mail">Enter your e-mail Id:</label>
+    <input type="text" id="mail" name="mail"  required><br>
+    <label for="phone">Enter Phone number:</label><br>
+    <input type="tel" id="phone" name="phone" onblur="validatephone()"  placeholder="xxxxxxxxxx" required >
+    <span id="phonePrompt">xxxxxxxxxx</span>
+    <br><br>
+    <button type="button" onclick="details()">Submit</button>
+    </fieldset>    
+    </form>
+        </div>
+<p id="a1" display="none" ></p>
+<p id="bghead"><b>Pick food items from below:-</b></p><br>
+<table id="menu">
+   <form  method="post" name="menu">
+        <tr><th>Food items:</th><th>Price:</th><th>Quantity</th></tr>
+    <tr><td>Chilli Potato</td><td>150/-</td><td><input type="number" id="q1" name="q1" min="1" max="10"></td></tr>
+    <tr><td>Hakka noddles</td><td>120/-</td><td><input type="number" id="q2" name="q2" min="1" max="10"></td></tr>
+    <tr><td>Veg Manchurian</td><td>220/-</td><td><input type="number" id="q3" name="q3" min="1" max="10"></td></tr>
+    <tr><td>Spring roll</td><td>180/-</td><td><input type="number" id="q4" name="q4" min="1" max="10"></td></tr>
+    <tr><td>Veg Momos</td><td>120/-</td><td><input type="number" id="q5" name="q5" min="1" max="10"></td></tr>
+    <tr><td>Veg Red Sauce Pasta</td><td>190/-</td><td><input type="number" id="q6" name="q6" min="1" max="10"></td></tr>
+    <tr><td>Veg White Sauce Pasta</td><td>200/-</td><td><input type="number" id="q7" name="q7" min="1" max="10"></td></tr>
+    <tr><td>Pizza</td><td>420/-</td><td><input type="number" id="q8" name="q8" min="1" max="10"></td></tr>  
+    <tr><td colspan="3"><button class="button" type="button" onclick="calcorder()" >Order Now</button></td></tr> 
+</form>
+</table>
+<p id="total"></p>
+<p id="Totalamt"></p>
+
+        </body>
+</html>

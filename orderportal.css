@@ -1,0 +1,140 @@
+body { background-image:url('https://images.wallpaperscraft.com/image/texture_wall_white_153099_2560x1080.jpg');
+  background-repeat: no repeat;
+  background-attachment: fixed;  
+    background-size: cover;
+   }
+   h1 {
+       text-align: center;
+   }
+   h3 { text-align: justify;
+  font-family: 'Courier New', Courier, monospace;
+  margin-left: 20px;
+  font-size:15px;
+  margin-right: 20px;
+  }
+  
+  #bghead {
+      font-size: 20px;
+      text-underline-position: below;
+      border-left: rgb(211, 121, 36);
+      border-width: medium;
+      background-color: #ffee00;
+      margin: 10px;
+      padding: 5px;
+      ;
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
+  th, td {
+    text-align: left;
+    padding: 8px;
+  }
+ /* table th,tr,td{
+  border-style: solid;
+    border-width: 2px;
+  width:25%;
+  padding: 2%;*/
+  
+  .button {
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 25px;
+    text-align: center;
+    font-size: 16px;
+    cursor: pointer;
+  }
+  
+  .button:hover {
+    background-color: green;
+  }
+  
+  #a1 {
+   font-size: 25px;
+   font-family: cursive;
+   font-style: oblique;
+margin: 10px;
+/*background-color: lightcoral;*/
+padding: 1%;
+display: inline;
+  }
+
+  div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    width: 50%;
+  }
+  button {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+ button :hover {
+    background-color: #043307;
+  }
+
+  input[type=text], [type=tel] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    border: 2px solid rgb(229, 229, 235);
+  }
+  input[type=text]:focus {
+    border: 3px solid #555;
+    outline: none;
+  }
+
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+  }
+  
+  li {
+    float: left;
+  }
+  
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    background-color: #111;
+  }
+  
+  #menu tr:nth-child(even) {background-color: #f2f2f2;
+  color: #0f0c0c;
+  }
+  #total {
+    font-size: 30px;
+    
+  }
+  #Totalamt {
+    font-size: 30px;
+    
+  }
+
+
+  
